@@ -29,7 +29,7 @@ function findFirstRepeated(gifts: number[]): number {
 
   for (const gift of gifts) {
     if (seenGifts.has(gift)) return gift;
-      seenGifts.add(gift);
+    seenGifts.add(gift);
   }
 
   return -1;
