@@ -28,10 +28,8 @@ function findFirstRepeated(gifts: number[]): number {
   const seenGifts: Set<number> = new Set();
 
   for (const gift of gifts) {
-    if (seenGifts.has(gift)) {
-      return gift;
-    }
-    seenGifts.add(gift);
+    if (seenGifts.has(gift)) return gift;
+      seenGifts.add(gift);
   }
 
   return -1;
